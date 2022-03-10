@@ -53,8 +53,10 @@ function game(){
             console.log("PC wins round "+(i+1)+"!");
             computerScore++;
     }
-}
-    if (playerScore > computerScore)
+}   
+    if (playerScore == computerScore)
+    return "Thats a tie folks!";
+    else if (playerScore > computerScore)
     return "Player wins the game! "+playerScore+"-"+computerScore;
     else return "Computer wins the game!"+computerScore+"-"+playerScore;
 
